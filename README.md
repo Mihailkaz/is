@@ -1,21 +1,39 @@
-# ИС
+# Моя UI Библиотека
 
-Сделать аккаунт на гитхабе.
-Установить:
-git
-github desktop
-vs code
-node.js 24
+![Version](https://img.shields.io/npm/v/biblioteka-kolenka)
+![License](https://img.shields.io/npm/l/biblioteka-kolenka)
 
----
+Современная библиотека React компонентов с красивыми стилями.
 
-Склонировать себе на компьютер репозиторий https://github.com/dergunovs/is
+## Установка
 
-ввести в терминале:
-git clone https://github.com/dergunovs/is.git
+```bash
+npm install biblioteka-kolenka
 
-открыть появившуюся папку в vs code
+## Использование
+import React from 'react';
+import { Button } from 'biblioteka-kolenka';
 
-открыть терминал в vs code
+function App() {
+  return 
+    <div>
+      <Button onClick={() => alert('Привет!')}>
+        Нажми меня
+      </Button>
+    </div>
+  ;
 
-написать в терминале в vs code: npm install
+  ## Компоненты
+  -Button
+  -input
+  -modal
+
+  ## Разработка
+  # Установка зависимостей
+npm install
+
+# Запуск в режиме разработки
+npm run dev
+
+# Сборка проекта
+npm run build

@@ -19,23 +19,15 @@ const props = withDefaults(defineProps<IProps>(), {
 
 <style module lang="scss">
 .button {
-  position: relative;
-  display: inline-flex;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  padding: 16px 32px;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: var(--color-white);
-  background: var(--color-primary);
-  border-radius: 16px;
-
-  &[data-layout='secondary'] {
-    color: var(--color-primary);
-    background-color: var(--color-transparent);
-    border-color: var(--color-primary);
-  }
+  background: linear-gradient(45deg, #FF6B6B, #FF8E53);
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
 }
 </style>
